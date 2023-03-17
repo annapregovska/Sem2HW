@@ -9,13 +9,13 @@ int GetNumber(string welcome)
     System.Console.Write(welcome);
     return Convert.ToInt32(Console.ReadLine());
 }
-int num = GetNumber("Введите число num: ");  // abc
+int num = GetNumber("Enter a number num: ");  // abc
 
 if (num > 99 && num < 1000)
 {
-    System.Console.WriteLine($"Вторая цифра числа {num} равна {num / 10 % 10}");
+    System.Console.WriteLine($"Secont digit of number {num} is {num / 10 % 10}");
 }
 else
 {
-    System.Console.WriteLine($"Вы ввели некорректное число {num}");
+    System.Console.WriteLine($"Your number is incorrect {num}");
 }
